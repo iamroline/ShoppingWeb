@@ -1,0 +1,26 @@
+<div class="sub-header">
+  <h2>{{subhead}}</h2>
+</div>
+<div class="content"> 
+
+  <div class="product" *ngFor="let items of products">
+    <div class="image">
+      <a routerLink="{{items.routerlink}}"> <img src="{{items.img}}" class="product-image" alt="{{items.name}}">
+      <h3 class="discription">{{items.name}}</h3> </a>
+    </div>  
+    <p><b>{{items.name}}</b><br>  {{items.price|currency:'SGD':'code'}}</p>
+    <!-- <button class="minus" (click)="minus(items)"> - </button>
+    <input value="{{items.qty}}" type="text" class="qty" style="width:40px; text-align: center;"> 
+    <button class="plus" (click)="plus(items)"> + </button><br>
+    <button class="cart" (click)="cart(items)" style="width:100px;"> Add to cart </button> -->
+  </div>
+
+</div>
+<!-- 
+<div class=pagenum>
+  
+  <button> << </button>
+  <a routerLink="/women"><button> 1 </button></a>
+  <a routerLink="/women2"><button> 2 </button></a>
+  <button> >> </button>
+</div> -->

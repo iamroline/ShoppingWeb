@@ -1,0 +1,22 @@
+<div class="login">
+  <h2> L O G I N </h2>
+  <input [(ngModel)]="user" type="text" placeholder="Email/Username"><br>
+  <input [(ngModel)]="pw" type="password" placeholder="Password"><br>
+  <a routerLink ="{{loginRedirect}}">  <input id="submit" type="submit" (click)="check()"></a><br>
+  <p style="color:red">{{parentData}}</p>
+
+  <!-- <p>Forget Password/Username? <br>
+  </p> -->
+  <br>
+ <hr>
+  <br>
+  <h2> Do not have an account? <br>C R E A T E: </h2>
+  <input [(ngModel)]="name" type="text" placeholder="Name"><br>
+  <input [(ngModel)]="email" type="text" placeholder="Email"><br>
+  <input [(ngModel)]="ruser" type="text" placeholder="Username"><br>
+  <input [(ngModel)]="rpw" type="password" placeholder="Password"><br>
+  <input [(ngModel)]="crpw" type="password" placeholder="Confirm Password"><br>
+  <input type="date" placeholder="Birth Date"><br>
+  <a routerLink ="/login-success"> <input id="submit" type="submit" (click)="register()"></a><br><br><br>
+</div>
+

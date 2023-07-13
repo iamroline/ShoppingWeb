@@ -1,0 +1,23 @@
+#cart{
+    height:50px;
+    right: 5%;
+    top:5%;
+}
+
+#item{
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 25px;
+    height:25px;
+    color:white;
+    text-align: center;
+    position: relative;
+    top:-50px;
+    left:40px;
+   
+}
+
+div{
+    width: 50px;
+    height:50px;
+}

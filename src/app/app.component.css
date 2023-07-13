@@ -1,0 +1,91 @@
+a{
+    color:rgb(78, 75, 75);
+    text-decoration: none;
+}
+#nav{
+    background-color: none;
+    padding:0%
+}
+.container-cart{
+    width:70px;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+.container-content{
+    width:100%;
+    display: inline-block; 
+    margin:0; 
+    position: relative;
+    top: 110px;
+    /* z-index: 90px; */
+}
+.container-header { 
+    background-color: rgb(216, 206, 192);
+    width:100%;
+    display: inline-block;  
+    margin:0;
+    position: fixed;
+    z-index: 100;
+
+}
+.container-footer{
+    background-color: black;
+    width:100%;
+    display:inline-block;
+    color:white;
+    padding: 20px;
+    position: relative;
+    top: 110px;
+}
+.container-title{
+    width:80%;
+}
+.email-input{
+    background-color: black;
+    color:white;
+    text-align:center;
+    width: 200px;
+    height:30px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+
+.footer-left{
+    margin-left: 5%;
+}
+
+li{
+    /* float:left; */
+    display: inline;
+    margin-left: 5%; 
+
+}
+.navi{
+    text-align: center;
+}
+
+#subs-button{
+    background-color: black;
+    color:white;
+    text-align:center;
+    width: 200px;
+    height:30px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+#subs-button:hover{
+    /* padding-right: 24px;
+    padding-left:8px; */
+    background-color: grey;
+}

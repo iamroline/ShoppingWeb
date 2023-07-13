@@ -1,0 +1,61 @@
+.content{
+    text-align:center;
+    display: inline-block;
+    width: 100%;
+}
+.content-details{
+    float:left; 
+    text-align:justify;
+    padding-left:5%;
+    padding-top:50px;
+    width:40%;
+}
+.content-product{
+    background-color: rgb(233, 223, 214);
+    float: right; 
+    text-align:center;
+    width:60%;  
+}
+.promo-input{
+    width:250px;
+    height: 40px;
+}
+#promo-button{
+    background-color: rgb(165, 153, 143);
+    border:0px;
+    width:100px;
+    height: 40px;
+    margin-left: 20px;
+}
+.sub-header{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.411);
+    margin:0;
+    padding:2px;
+}
+table{
+    width:90%;
+    margin:5%;
+}
+tr{
+    border-bottom-width: 1px;
+}
+td{
+    padding:20px
+}
+#email,#phone,#address,#cardnum{
+    width:80%;
+    margin-bottom: 15px;
+    height: 40px;
+}
+#fname,#exp{
+    width:35%;
+    margin-bottom: 15px;
+    height: 40px;
+}
+#lname, #ccv{
+    width:35%;
+    margin-left:10%;
+    margin-bottom: 15px;
+    height: 40px;
+}

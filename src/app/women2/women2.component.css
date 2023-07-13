@@ -1,0 +1,42 @@
+.content{
+    text-align: justify;
+    display:inline-block;
+    width:100%;
+
+}
+.pagenum{
+ position: inline;
+ margin-right: 50px;
+ text-align: right;
+}
+
+.product {
+    text-align: center;
+    padding:5%;
+    padding-bottom:0;
+    float: left;
+}
+
+.product-image{
+    height: 350px;
+    width:250px;
+    object-fit: cover;
+}
+.product-image:hover{
+    opacity: 50%;
+}
+
+.sub-header{
+    text-align: center;
+    background-color: rgba(136, 115, 115, 0.411);
+    margin:0;
+    padding:2px;
+}
+button{ 
+    background-color: rgba(165, 153, 143, 0.493);
+    border:0px;
+    width:30px;
+    height:30px;
+    margin:5px;
+    border: 1px rgb(136, 133, 133) solid;
+}

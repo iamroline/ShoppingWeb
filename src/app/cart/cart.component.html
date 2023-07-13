@@ -1,0 +1,85 @@
+<div class="sub-header">
+  <h2>{{subhead}}</h2>
+</div>
+<div class="content"> 
+
+  <div class="content-details"> 
+    <p><b>Contact Information:</b></p>
+
+    <input id="email" [(ngModel)]="email" type="text" placeholder="Email Adress"><br>
+    <!-- <input id="phone" [(ngModel)]="phone" type="text" placeholder="Contact Number"> -->
+    <input id="phone" [(ngModel)]="phone" type="text" placeholder="Contact Number">
+  <p><b>Shipping Information:</b></p>
+  <input id="fname" [(ngModel)]="fname" type="text" placeholder="First Name">
+  <input id="lname" [(ngModel)]="lname" type="text" placeholder="Last Name">
+  <br>
+  <input id="address" [(ngModel)]="address" type="text" placeholder="Address">
+  <br>
+  <input type="checkbox" [(ngModel)]="checkbox" name="remember"> Remember my details.
+    <br><br>
+  <p><b>Payment Details:</b></p>
+
+  
+  <input id="cardnum" [(ngModel)]="cardnum" type="text" placeholder="Card Number">
+  <br>  
+  <input id="exp" [(ngModel)]="exp" type="text" placeholder="Exp (MM/YY)">
+  <input id="ccv" [(ngModel)]="ccv" type="text" placeholder="CCV">
+  <br>
+  <input type="checkbox" id="remember" name="remember"> Remember card details.
+  <p style='color:red;'>  {{msg}}</p>
+  <a routerLink="/finalised"><button id="promo-button" >Check Out</button></a>
+  <br>
+  </div>
+
+  <div class="content-product">
+    <br>
+    <p><b>Items in your cart:</b></p>
+ 
+    <!-- <b>{{parentData1}}:</b>        {{parentData}} -->
+    <table>
+      <tr>
+        <th>SN</th>
+        <th>Product</th>
+        <th>Size</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Sub Total</th>
+        <th> Action</th>
+      </tr>
+      <tr *ngFor="let gcd of getcartDetails index as i">
+        <td>{{i+1}}.</td>
+        <td><img src="{{gcd.img}}" style="width:100px"></td>
+        <td>{{gcd.size}}</td>
+        <td>{{gcd.price|currency:'SGD':'code'}}</td>
+        <td>{{gcd.qty}}</td>
+        <td>{{subtotal(gcd)|currency:'SGD':'code'}}</td>
+        <td><button class="btn btn-danger" (click)="singleDelete(gcd)">
+          Delete
+        </button></td>
+      </tr>
+    </table>
+
+   <b>Total Amount:</b> {{total|currency:'SGD':'code'}}
+    <br>
+  <i><b>{{discName}}</b> {{disc|currency:'SGD':'code'}}</i>
+    <br>
+    <b>{{FTname}}</b> {{FT|currency:'SGD':'code'}}
+    <br>
+    <br>
+
+    <input class="promo-input" [(ngModel)]="promo" type="text" placeholder="Gift card or discount code">
+    <button id="promo-button" (click)="checkpromo()">Apply</button><br>
+    <div [style.color]="checkerror? 'black' : 'red' "> {{promostatus}} </div>
+
+    <br>{{sample}}
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+  </div>
+</div>

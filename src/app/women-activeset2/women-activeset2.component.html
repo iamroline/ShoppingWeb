@@ -1,0 +1,96 @@
+<div class="sub-header">
+  <h2>{{subhead}}</h2>
+</div>
+<div class="content"> 
+
+  <div class="content-details" *ngFor="let items of product">
+    <h3>{{items.name}}</h3>
+    {{items.price|currency:'SGD':'code'}}<br><br>
+     <button class="minus" (click)="minus(items)"> - </button>
+     <input value="{{items.qty}}" type="text" class="qty"> 
+     <button class="plus" (click)="plus(items)"> + </button>
+     <br><br>
+     <button class="add" (click)="cart(items)"> Add to cart</button><br><br>
+     <button class="size"(click)="sizexs(items)"> XS</button>
+     <button class="size"(click)="sizes(items)"> S</button>
+     <button class="size"(click)="sizem(items)"> M</button>
+     <button class="size"(click)="sizel(items)"> L</button>
+     <button class="size"(click)="sizexl(items)"> XL</button>
+     <br>
+     <div [style.color]="check? 'black' : 'red' "> {{remarks}} </div>
+     <br>
+    Colours:<br>
+    <a routerLink="/women-activeset2"><button class="color black"> </button></a>
+    
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Details
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        The V-Bra to support your sweatiest activities. Minimal seams for a luxe feel, even if it’s just chasing after your dog.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Measurement
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <table>
+          <tr>
+            <th>Size</th>
+            <th>PTP</th>
+            <th>Waist</th>
+            <th>Hip</th>
+          </tr>
+          <tr *ngFor="let items of chart">
+            <td>{{items.size}}</td>
+            <td>{{items.ptp}}</td>
+            <td>{{items.waist}}</td>
+            <td>{{items.hip}}</td>
+          </tr>
+        </table>
+        <br><br>
+        <i>Measurement taken flat</i><br>
+        <i>Model is UK6, 176cm and wears size S for this item.</i>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Product Care
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Machine wash in laundry bag in cold water. Tumble dry low. Do not bleach or soak
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+  
+  <div class="content-product" *ngFor="let items of product">
+    <img src="{{items.img}}" class="product-image" alt="{{items.name}}">
+  </div>
+  
+  
+</div>
+

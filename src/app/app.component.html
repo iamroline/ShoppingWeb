@@ -1,0 +1,51 @@
+<div class="container-header">
+  <div class="container-title">
+    <h1>{{heading}}</h1>
+  </div>
+
+  <div class="container-cart">
+    <app-header></app-header>
+  </div>
+
+  <div class="navi">
+    <ul>
+      <a routerLink="/home"><li>Home</li></a>
+      <a routerLink="/about"><li>About</li></a>
+      <li>
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+        Shop Men
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" routerLink="/men">All Men</a>
+        <a class="dropdown-item" routerLink="/men-active">Active Wear</a>
+        <a class="dropdown-item" routerLink="/men-shirt">Clothes</a>
+      </div>
+    </li>
+     <li>
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+          Shop Women
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" routerLink="/women">All Women</a>
+          <a class="dropdown-item" routerLink="/women-active">Active Wear</a>
+          <a class="dropdown-item" routerLink="/women-dress"> Clothes</a>
+        </div>
+      </li>
+      <a routerLink="/account"><li>My Account</li></a>
+    </ul>
+  </div>
+
+</div>
+
+<div class="container-content">
+  <router-outlet></router-outlet>
+</div>
+
+<div class="container-footer">
+  <div class="footer-left">
+    <p>Subscribe to the newsletter</p>
+    <input class="email-input" [(ngModel)]="email" type="text" placeholder="Enter your email">
+    <br><br>
+    <button id="subs-button" (click)="createemail()">Subscribe!</button>
+  </div>
+</div>

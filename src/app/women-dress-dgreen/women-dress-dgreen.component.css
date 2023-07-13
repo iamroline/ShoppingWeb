@@ -1,0 +1,97 @@
+
+
+.add{
+    background-color: rgb(165, 153, 143);
+    border:0px;
+    width:100px;
+    height: 40px;
+}
+.add:hover{
+    opacity: 50%;
+}
+.color{
+    border:0px;
+    width:50px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.green{
+    background-color: rgb(210, 233, 192);
+}
+.black{
+    background-color: rgb(8, 8, 8);
+}
+.beige{
+    background-color: rgb(226, 210, 194);
+}
+
+.content{
+    padding:10px;
+    padding-top: 50px;
+    text-align:center;
+    display: inline-block;
+    width: 100%;
+}
+.content-details{
+    float:left; 
+    text-align:center;
+    margin-left: 50px;
+    top: 200px;
+    width:50%;
+}
+.content-product{
+    float: left;
+    margin-left: 50px;
+    position: relative;
+     
+}
+
+
+.product-image{
+    height: 500px;
+    top: 10%;
+}
+.product-image:hover{
+    opacity: 50%;
+}
+
+.qty{
+    margin-left: 10px;
+    text-align: center;
+    width:50px;
+}
+
+.size, .plus, .minus{
+    background-color: rgba(165, 153, 143, 0.493);
+    border:0px;
+    width:30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.size:active{
+    opacity: 50%;
+}
+.size:focus{
+    opacity: 50%;
+}
+
+.sub-header{
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.411);
+    margin:0;
+    padding:2px;
+}
+table{
+    padding:30%;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+}
+td{
+    padding-left:20px;
+    padding-right:20px;
+}
+tr{
+    border-bottom-color: black;
+}
